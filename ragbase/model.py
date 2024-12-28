@@ -1,10 +1,17 @@
+import os
+
 from langchain_community.chat_models import ChatOllama
-from langchain_community.document_compressors.flashrank_rerank import FlashrankRerank
+from langchain_community.document_compressors.flashrank_rerank import \
+    FlashrankRerank
 from langchain_community.embeddings.fastembed import FastEmbedEmbeddings
 from langchain_core.language_models import BaseLanguageModel
 from langchain_groq import ChatGroq
 
 from ragbase.config import Config
+
+os.environ.pop("HTTP_PROXY", None)
+os.environ.pop("HTTPS_PROXY", None)
+os.environ.pop("ALL_PROXY", None)
 
 
 def create_llm() -> BaseLanguageModel:
@@ -20,8 +27,8 @@ def create_llm() -> BaseLanguageModel:
             temperature=Config.Model.TEMPERATURE,
             model_name=Config.Model.REMOTE_LLM,
             max_tokens=Config.Model.MAX_TOKENS,
+            # Ensure no proxy-related parameters are passed here
         )
-
 
 def create_embeddings() -> FastEmbedEmbeddings:
     return FastEmbedEmbeddings(model_name=Config.Model.EMBEDDINGS)

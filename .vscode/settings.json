@@ -1,10 +1,55 @@
 {
-    "[python]": {
-      "editor.formatOnSave": true,
-      "editor.defaultFormatter": "charliermarsh.ruff",
-      "editor.codeActionsOnSave": {
-        "source.fixAll": "never",
-        "source.organizeImports": "explicit"
-      }
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "never",
+      "source.organizeImports": "explicit"
     }
-  }
+  },
+  "cSpell.words": [
+    "ingestor",
+    "Ingestor",
+    "ragbase",
+    "Tahoma",
+    "آپلود",
+    "آماده",
+    "اسناد",
+    "اطلاعات",
+    "اینجا",
+    "بارگذاری",
+    "بازخوانی",
+    "باشید",
+    "بدانید",
+    "بمانید",
+    "پاسخ",
+    "پایگاه",
+    "پردازش",
+    "پرسش",
+    "تحلیل",
+    "جدیدی",
+    "چیزی",
+    "خواهد",
+    "خواهید",
+    "درباره",
+    "دقیق",
+    "رسانی",
+    "رسیده",
+    "زودی",
+    "سلام",
+    "سوال",
+    "شروع",
+    "شکیبا",
+    "صفحه",
+    "عمیق",
+    "فایل",
+    "کنید",
+    "گفتگو",
+    "لطفاً",
+    "مجاز",
+    "منبع",
+    "منتظر",
+    "هستند",
+    "وارد"
+  ]
+}
